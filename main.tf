@@ -110,8 +110,10 @@ resource "aws_security_group" "lb_sg" {
 # Launch Configuration
 resource "aws_launch_configuration" "app" {
   name          = "app-launch-configuration"
-  image_id      = var.ami_id
+  image_id      = "ami-0522ab6e1ddcc7055"
   instance_type = "t2.micro"
+  key_name      = "terra-config"
+
 
   lifecycle {
     create_before_destroy = true

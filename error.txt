@@ -1,0 +1,20 @@
+  backend/local: starting Apply operation
+╷
+│ Error: Error acquiring the state lock
+│
+│ Error message: resource temporarily unavailable
+│ Lock Info:
+│   ID:        9c4e0ebb-5496-5031-3092-a5744d46df7e
+│   Path:      terraform.tfstate
+│   Operation: OperationTypeRefresh
+│   Who:       ubuntu@ip-172-31-10-0
+│   Version:   1.5.3
+│   Created:   2024-09-01 04:07:20.1768147 +0000 UTC
+│   Info:
+│
+│
+│ Terraform acquires a state lock to protect the state from being written
+│ by multiple users at the same time. Please resolve the issue above and try
+│ again. For most commands, you can disable locking with the "-lock=false"
+│ flag, but this is not recommended.
+╵
